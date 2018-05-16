@@ -67,9 +67,9 @@ class Owner
   end
   
   def sell_pets
+    binding.pry
     @pets = {:fishes => [], :cats => [], :dogs => []}
     @mood = "sad"
-    binding.pry
   end
   
 end
