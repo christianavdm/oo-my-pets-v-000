@@ -29,19 +29,19 @@ class Owner
   def buy_fish(name)
     fish = Fish.new(name)
     @pets[:fishes] << fish
-    owner.mood = "happy"
+    @mood = "happy"
   end
   
   def buy_cat(name)
     cat = Cat.new(name)
     @pets[:cats] << cat
-    owner.mood = "happy"
+    @mood = "happy"
   end
   
   def buy_dog(name)
     dog = Dog.new(name)
     @pets[:dogs] << dog
-    owner.mood = "the most happy!"
+    @mood = "the most happy!"
   end
   
   def say_species
@@ -50,7 +50,7 @@ class Owner
   
   def walk_dogs
     @pets[:dogs].each do |dog|
-      dog.mood = "happy"
+      @mood = "happy"
     end
   end
   
@@ -68,7 +68,7 @@ class Owner
   
   def sell_pets
     @pets = {:fishes => [], :cats => [], :dogs => []}
-    owner.mood = "sad"
+    @mood = "sad"
   end
   
 end
