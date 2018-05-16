@@ -67,7 +67,6 @@ class Owner
   end
   
   def sell_pets
-    binding.pry
     sad_pets = @pets.values.flatten
     @pets = {:fishes => [], :cats => [], :dogs => []}
     sad_pets.each do |pet|
