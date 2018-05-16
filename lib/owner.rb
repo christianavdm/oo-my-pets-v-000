@@ -75,4 +75,11 @@ class Owner
     @mood = "sad"
   end
   
+  def list_pets
+    fish = @pets[:fishes].count
+    dog = @pets[:dogs].count
+    cat = @pets[:cats].count
+    return "I have #{fish} fish, #{dog} dog(s), and #{cat} cat(s)."
+  end
+  
 end
