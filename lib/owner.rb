@@ -31,4 +31,8 @@ class Owner
     @pets["fishes"] << fish
   end
   
+  def say_species
+    puts "I am a human."
+  end
+  
 end
