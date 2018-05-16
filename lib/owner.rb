@@ -45,4 +45,10 @@ class Owner
     return "I am a human."
   end
   
+  def walk_dogs
+    @pets[:dogs] each do |dog|
+      
+    end
+  end
+  
 end
